@@ -27,7 +27,7 @@ namespace LocadoraZe.Api.Controllers
             _context.Locacoes.Add(locacoes);
             await _context.SaveChangesAsync();
 
-            return Ok("Locacão adicionada com sucesso");
+            return Ok("Locação realizada com sucesso");
         }
 
         [HttpPut("`{id}")]

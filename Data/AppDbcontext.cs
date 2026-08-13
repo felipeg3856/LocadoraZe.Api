@@ -11,11 +11,10 @@ namespace LocadoraZe.Api.Data
         public AppDbcontext(DbContextOptions<AppDbcontext>
             options) : base(options)
         {
-
         }
 
-        public DbSet<Patinetes> Patinete { get; set; }
-        public DbSet<Clientes> Cliente { get; set; }
+        public DbSet<Patinetes> Patinetes { get; set; }
+        public DbSet<Clientes> Clientes { get; set; }
         public DbSet<Locacoes> Locacoes { get; set; }
 
     }

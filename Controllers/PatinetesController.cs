@@ -26,7 +26,7 @@ namespace LocadoraZe.Api.Controllers
         [HttpPost]
         public async Task<IActionResult> PostPatinetes(Patinetes patinetes)
         {
-            _context.Patinete.Add(patinetes);
+           _context.Patinete.Add(patinetes);
             await _context.SaveChangesAsync();
 
             return Ok("Patinete Alugado com sucesso");
@@ -43,7 +43,7 @@ namespace LocadoraZe.Api.Controllers
             return NoContent();
         }
         [HttpDelete("{id}")]
-        public async Task<IActionResult> DeletePatinete(int id, string Marca, string Modelo, int Ano)
+        public async Task<IActionResult> DeletePatinete(int id, string Marca)
         {
             var patinetes = await
                 _context.Patinete.FindAsync(id);

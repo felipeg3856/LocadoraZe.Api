@@ -4,8 +4,9 @@
     {
         public int Id { get; set; }
         public DateTime Dataretirada { get; set; }
-        
-        public DateTime Datadevolucao { get; set; }
+
+        public int ClienteId { get; set; }
+        public int PatineteId { get; set; }
 
     }
 }
